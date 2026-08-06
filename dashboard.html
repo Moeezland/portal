@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | e-Moeezland</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<div id="loadingScreen">
+
+    <div class="loader-content">
+
+        <img
+            src="assets/logo.png"
+            class="loader-logo"
+            alt="Moeezland Logo">
+
+        <div class="spinner"></div>
+
+        <h2>e-Moeezland Portal</h2>
+
+        <p id="loadingText">
+            Loading your secure portal...
+        </p>
+
+    </div>
+
+</div>
+
+<header>
+
+    <div class="header-content">
+
+        <div class="portal-brand">
+
+            <img src="assets/logo.png" alt="Logo">
+
+            <h1>e-Moeezland Portal</h1>
+
+        </div>
+
+        <button id="signOutBtn" class="sign-out-btn">
+            Sign Out
+        </button>
+
+    </div>
+
+</header>
+
+<main
+    id="dashboardContent"
+    class="dashboard-container hidden">
+
+    <h1 class="dashboard-title">
+
+        Welcome,
+        <span id="welcomeName">Loading...</span>
+
+    </h1>
+
+    <div class="dashboard-tabs">
+
+        <button
+            class="dashboard-tab active"
+            id="detailsTab">
+
+            👤 My Details
+
+        </button>
+
+        <button
+            class="dashboard-tab"
+            id="passwordTab">
+
+            🔑 Change Password
+
+        </button>
+
+    </div>
+
+    <!-- DETAILS -->
+
+    <section
+        class="dashboard-card"
+        id="detailsCard">
+
+        <table class="details-table">
+
+            <tr>
+
+                <th>Name:</th>
+
+                <td id="detailName">
+
+                    Loading...
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Civil ID:</th>
+
+                <td id="detailCivilId">
+
+                    Loading...
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Date of Birth:</th>
+
+                <td id="detailDob">
+
+                    Loading...
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Email:</th>
+
+                <td id="detailEmail">
+
+                    Loading...
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Border Number:</th>
+
+                <td id="detailBorder">
+
+                    Loading...
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>Civil Status:</th>
+
+                <td id="detailStatus">
+
+                    Loading...
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- PASSWORD -->
+
+    <section
+        class="dashboard-card hidden"
+        id="passwordCard">
+
+        <div class="password-form">
+
+            <label>
+
+                Existing Password
+
+                <input
+                    type="password"
+                    id="currentPassword">
+
+            </label>
+
+            <label>
+
+                New Password
+
+                <input
+                    type="password"
+                    id="newPassword">
+
+            </label>
+
+<label>
+
+    Confirm Password
+
+    <input
+        type="password"
+        id="confirmPassword">
+
+</label>
+
+<div id="passwordMessage"></div>
+
+<button id="updatePasswordBtn">
+
+    Update Password
+
+</button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/dashboard.js" type="module"></script>
+
+</body>
+
+</html>

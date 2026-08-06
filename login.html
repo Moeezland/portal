@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in | e-Moeezland</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+    <div class="header-content">
+
+        <img src="assets/logo.png" class="logo" alt="Logo">
+
+        <h1>e-Moeezland Portal</h1>
+
+    </div>
+
+</header>
+
+<main>
+
+    <div class="login-card">
+
+        <h2>Login</h2>
+
+<div
+    id="messageBox"
+    class="message-box"
+    style="display: none;">
+</div>
+
+<form id="loginForm">
+
+    <label>Email Address</label>
+
+<input
+    id="email"
+    type="email"
+    autocomplete="email"
+    placeholder="Enter your email address">
+
+    <label>Password</label>
+
+<input
+    id="password"
+    type="password"
+    autocomplete="current-password"
+    placeholder="Enter your password">
+
+<button
+    id="loginButton"
+    type="submit">
+        Sign in
+    </button>
+
+    <div class="login-links">
+
+<a
+    id="registerLink"
+    href="register.html">
+            Register your account
+        </a>
+
+<a
+    id="forgotPasswordLink"
+    href="forgot-password.html">
+            Forgot your password?
+        </a>
+
+    </div>
+
+</form>
+
+    </div>
+
+</main>
+
+<script
+    type="module"
+    src="js/login.js">
+</script>
+
+</body>
+</html>
